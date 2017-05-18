@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer "lucas.pires.mattos@gmai.com"
+LABEL maintainer "lucas.pires.mattos@gmail.com"
 
 ENV SERVER_MAP=de_dust2
 ENV SERVER_MAXPLAYERS=16
@@ -44,4 +44,4 @@ EXPOSE ${SERVER_PORT}
 
 ENTRYPOINT ["./csserver"]
 
-CMD ["details"]
+CMD ["start"]
