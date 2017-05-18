@@ -37,8 +37,9 @@ RUN wget https://raw.githubusercontent.com/flyingluscas/cs16-server-docker/maste
 RUN chmod +x csserver
 RUN ./csserver auto-install
 
-EXPOSE 27015
-EXPOSE 27005
+EXPOSE ${SERVER_PORT}/udp
+EXPOSE ${SERVER_CLIENT_PORT}/udp
+EXPOSE ${SERVER_PORT}
 
 ENTRYPOINT ["./csserver"]
 
