@@ -23,16 +23,16 @@ version="170501"
 #### Server Settings ####
 
 ## Server Start Settings | https://github.com/GameServerManagers/LinuxGSM/wiki/Start-Parameters
-defaultmap=${SERVER_MAP:-de_dust2}
-maxplayers=${SERVER_MAXPLAYERS:-16}
-port=${SERVER_PORT:-27015}
-clientport=${SERVER_CLIENT_PORT:-27005}
-ip=${SERVER_IP:-0.0.0.0}
-hostname=${SERVER_NAME:-CS 1.6 Server}
+defaultmap=${SERVER_MAP}
+maxplayers=${SERVER_MAXPLAYERS}
+port=${SERVER_PORT}
+clientport=${SERVER_CLIENT_PORT}
+ip=${SERVER_IP}
+servername=${SERVER_NAME}
 
 ## Server Start Command | https://github.com/GameServerManagers/LinuxGSM/wiki/Start-Parameters#additional-parameters
 fn_parms(){
-parms="-game cstrike -strictportbind +hostname ${hostname} +ip ${ip} -port ${port} +clientport ${clientport} +map ${defaultmap} -maxplayers ${maxplayers}"
+parms="-game cstrike -strictportbind +hostname ${servername} +ip ${ip} -port ${port} +clientport ${clientport} +map ${defaultmap} -maxplayers ${maxplayers}"
 }
 
 #### LinuxGSM Settings ####
