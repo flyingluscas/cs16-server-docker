@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+LABEL maintainer "lucas.pires.mattos@gmai.com"
 
 ENV SERVER_MAP=de_dust2
 ENV SERVER_MAXPLAYERS=16
